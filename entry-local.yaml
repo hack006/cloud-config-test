@@ -1,9 +1,9 @@
 multipart:
-    maxFileSize: 20MB
-    maxRequestSize: 20MB
+  maxFileSize: 20MB
+  maxRequestSize: 20MB
 spring:
     datasource:
-    	url: "jdbc:postgresql://127.0.0.1:5432/"
+        url: "jdbc:postgresql://127.0.0.1:5432/"
         schema: public
         driverClassName: org.postgresql.Driver
         platform: postgresql
