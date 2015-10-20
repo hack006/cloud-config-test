@@ -3,6 +3,8 @@ multipart:
     maxRequestSize: 20MB
 spring:
     datasource:
+		url: "jdbc:postgresql://127.0.0.1:5432/"
+        schema: public
         driverClassName: org.postgresql.Driver
         platform: postgresql
     jpa:
@@ -11,9 +13,5 @@ spring:
         show-sql: true
 logging:
     level: INFO  
-spring:
-    datasource:
-        url: "jdbc:postgresql://127.0.0.1:5432/"
-        schema: public
 # TODO
 #system.translations = stylesheet/less=stylesheet,less/main.less=less_compiled/main.min.css,less.min.js=dummy.js
