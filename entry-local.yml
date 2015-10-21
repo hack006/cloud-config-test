@@ -15,5 +15,9 @@ server:
     port: 8086        
 logging:
     level: INFO  
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: ${vcap.services.eureka-service.credentials.uri:http://127.0.0.1:8761}/eureka/
 # TODO
 #system.translations = stylesheet/less=stylesheet,less/main.less=less_compiled/main.min.css,less.min.js=dummy.js
